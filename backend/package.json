@@ -1,0 +1,19 @@
+{
+    "name": "ai-document-assistant-backend",
+    "version": "1.0.0",
+    "description": "Express backend for AI Document Assistant",
+    "main": "server.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js",
+        "test": "node --test"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.2",
+        "express": "^4.21.2",
+        "multer": "^2.2.0",
+        "pdf-parse": "^2.4.5"
+    }
+}

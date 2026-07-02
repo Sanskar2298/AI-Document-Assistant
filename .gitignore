@@ -1,0 +1,4 @@
+echo node_modules/ >> .gitignore
+echo .next/ >> .gitignore
+echo .env >> .gitignore
+echo uploads/ >> .gitignore 
