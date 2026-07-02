@@ -4,14 +4,14 @@ const healthController = require("../controllers/healthController");
 const router = express.Router();
 
 const documentRoutes = require("./documentRoutes");
-const searchRoutes = require("./searchRoutes"); // NEW
-
-const router2 = express.Router(); // (ignore, just for clarity below)
+const searchRoutes = require("./searchRoutes");
+const chatRoutes = require("./chatRoutes");
 
 router.get("/", healthController.getWelcomeMessage);
 router.get("/health", healthController.getHealthStatus);
 
 router.use("/api/documents", documentRoutes);
-router.use("/api", searchRoutes); // NEW — mounts POST /api/search
+router.use("/api", searchRoutes);
+router.use("/api", chatRoutes);
 
 module.exports = router;
