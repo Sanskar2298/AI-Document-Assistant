@@ -1,3 +1,5 @@
-echo backend/.env >> .gitignore
-echo .env >> .gitignore
-echo .env.local >> .gitignore
+**/node_modules/
+**/.env
+**/.env.local
+**/.next/
+
