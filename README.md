@@ -93,40 +93,7 @@ Lexora provides an overview of your uploaded knowledge base, including:
 
 ---
 
-# 🏗️ Architecture
-
-Lexora follows a full-stack architecture built around document ingestion, vector search, and LLM-powered reasoning.
-
-```text
-                    ┌─────────────────────┐
-                    │      Next.js UI     │
-                    │                     │
-                    │  Workspace          │
-                    │  Documents          │
-                    │  AI Chat            │
-                    │  Study Mode         │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    Node.js Backend  │
-                    │                     │
-                    │  Controllers        │
-                    │  Services           │
-                    │  AI Pipeline        │
-                    └──────────┬──────────┘
-                               │
-                  ┌────────────┼────────────┐
-                  ▼            ▼            ▼
-           ┌──────────┐  ┌──────────┐  ┌──────────┐
-           │ Gemini   │  │ Qdrant   │  │ Document │
-           │   API    │  │ Vector DB│  │ Pipeline │
-           └──────────┘  └──────────┘  └──────────┘
-```
-
----
-
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Layer           | Technology                     |
 | --------------- | ------------------------------ |
@@ -134,13 +101,13 @@ Lexora follows a full-stack architecture built around document ingestion, vector
 | Backend         | Node.js                        |
 | AI / LLM        | Google Gemini API              |
 | Vector Database | Qdrant                         |
-| Architecture    | Retrieval-Augmented Generation |
+| AI Architecture | Retrieval-Augmented Generation |
 | Styling         | Tailwind CSS                   |
 | Deployment      | Vercel                         |
 
 ---
 
-# 🔄 How It Works
+## 🔄 How It Works
 
 ### 1. Upload
 
@@ -172,7 +139,7 @@ Relevant source information is surfaced alongside the generated response so user
 
 ---
 
-# 🧩 Project Structure
+## 🧩 Project Structure
 
 ```text
 lexora/
@@ -202,9 +169,9 @@ lexora/
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## Prerequisites
+### Prerequisites
 
 Make sure you have:
 
@@ -213,9 +180,7 @@ Make sure you have:
 * A Gemini API key
 * A Qdrant instance
 
----
-
-## Installation
+### Installation
 
 Clone the repository:
 
@@ -231,7 +196,7 @@ Install dependencies:
 npm install
 ```
 
-If the frontend and backend are maintained separately, install dependencies inside each directory:
+If the frontend and backend are maintained separately:
 
 ```bash
 cd frontend
@@ -243,7 +208,7 @@ npm install
 
 ---
 
-# 🔐 Environment Variables
+## 🔐 Environment Variables
 
 Create the required `.env` files.
 
@@ -262,7 +227,7 @@ Add any additional environment variables required by your deployment.
 
 ---
 
-# ▶️ Running Locally
+## ▶️ Running Locally
 
 Start the backend:
 
@@ -280,7 +245,7 @@ Then open the local development URL provided by Next.js.
 
 ---
 
-# 🧠 Why RAG?
+## 🧠 Why RAG?
 
 Traditional LLM applications can struggle when answering questions about private or specialized information because the model does not inherently know the contents of a user's documents.
 
@@ -310,7 +275,7 @@ This makes the system better suited for working with private documents, reports,
 
 ---
 
-# 🎯 Use Cases
+## 🎯 Use Cases
 
 Lexora can be used for:
 
@@ -325,7 +290,7 @@ Lexora can be used for:
 
 ---
 
-# 🛡️ Design Principles
+## 🛡️ Design Principles
 
 ### Grounded AI
 
@@ -345,31 +310,14 @@ The LLM and retrieval layers are separated from the application interface, makin
 
 ---
 
-# 🔮 Future Improvements
-
-Potential directions for Lexora include:
-
-* [ ] More document formats
-* [ ] Advanced document comparison
-* [ ] Improved citation and source tracing
-* [ ] Collaborative workspaces
-* [ ] Fine-grained workspace permissions
-* [ ] Advanced knowledge graphs
-* [ ] More AI study tools
-* [ ] Streaming AI responses
-* [ ] Evaluation pipelines for RAG quality
-* [ ] Improved retrieval and reranking
-
----
-
-# 🌐 Live Demo
+## 🌐 Live Demo
 
 **Lexora:**
 https://lexora-ai-document.vercel.app/
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Sanskar Srivastava**
 
@@ -381,4 +329,4 @@ Interested in building scalable backend systems, AI-powered products, and produc
 
 ## ⭐ If you find Lexora interesting
 
-Give the repository a star and feel free to explore the architecture, experiment with the system, or contribute ideas.
+Give the repository a star and feel free to explore the project, experiment with the system, or contribute ideas.
